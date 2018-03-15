@@ -10,13 +10,13 @@ class ProfileCard extends Component {
     super(props);
   }
 
-  _handleReturn = (data) => {
+  _handleReturn = data => {
     this.props.handleReturn(data);
-  }
+  };
 
-  _handleRemove = (data) => {
-    this.props.handleRemove(data)
-  }
+  _handleRemove = data => {
+    this.props.handleRemove(data);
+  };
   render() {
     return (
       <div className="profileCard">
@@ -37,21 +37,30 @@ class ProfileCard extends Component {
                 title={this.props.itemsBorrowed.length}
                 subtitle="Items borrowed"
               />
-              <Gravatar
-                className="profilePicture"
-                size={100}
-                email={this.props.user.email}
-              />
             </div>
           </Card>
         </div>
         <Masonry>
           {this.props.itemsBorrowed.map((item, index) => {
-            return <Item key={index} data={item} loggedInUserId={this.props.loggedInUserId} handleReturn={this._handleReturn} />;
+            return (
+              <Item
+                key={index}
+                data={item}
+                loggedInUserId={this.props.loggedInUserId}
+                handleReturn={this._handleReturn}
+              />
+            );
           })}
 
           {this.props.itemsOwned.map((item, index) => {
-            return <Item key={index} data={item} loggedInUserId={this.props.loggedInUserId} handleRemove={this._handleRemove} />;
+            return (
+              <Item
+                key={index}
+                data={item}
+                loggedInUserId={this.props.loggedInUserId}
+                handleRemove={this._handleRemove}
+              />
+            );
           })}
         </Masonry>
       </div>

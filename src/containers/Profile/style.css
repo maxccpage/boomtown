@@ -5,6 +5,10 @@
 
 .profileHead > div {
   padding: 2rem;
+  display: flex;
+}
+.profileHead h2 {
+  font-size: 44px;
 }
 
 .profileHead .profileMeta {
