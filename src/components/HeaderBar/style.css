@@ -1,0 +1,30 @@
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.titleWrapper .HeaderLogo {
+  height: 36px;
+  margin-right: 2rem;
+  width: auto;
+}
+
+.headerButtonWrapper {
+  align-items: center;
+  display: flex;
+  margin: 0 1rem;
+  padding: 6px 0;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.headerButtonWrapper button span {
+  color: white !important;
+}
+
+.Header-Container {
+  flex-wrap: nowrap !important;
+  justify-content: center;
+  align-items: center;
+}
