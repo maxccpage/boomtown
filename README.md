@@ -1,5 +1,4 @@
-![](https://ibb.co/ipf1QH)
-
+![](https://preview.ibb.co/iKXsXx/Screen_Shot_2018_03_20_at_12_25_42_AM.png)
 # Boomtown
 
 #Summary 
